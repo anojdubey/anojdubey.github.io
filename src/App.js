@@ -331,7 +331,7 @@ function App() {
                   boxShadow: "none",
                 }}
                 onClick={() => {
-                  alert("Welcome " + email + "!");
+                  alert("Welcome " + email);
                 }}
               >
                 Sign Up
