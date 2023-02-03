@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import {
   Box,
   Button,
   Container,
   Grid,
-  Stack,
   TextField,
   Typography,
 } from "@mui/material";
@@ -33,7 +31,7 @@ function App() {
           top: "30px",
         }}
       >
-        <img src={wlogo} width="160px" />
+        <img src={wlogo} alt="logo" width="160px" />
       </Box>
       {/* Login */}
       <Grid
@@ -63,7 +61,7 @@ function App() {
                   fontWeight: "500",
                 }}
               >
-                <img src={wlogo} width="100px" />
+                <img src={wlogo} alt="logo" width="100px" />
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -146,7 +144,7 @@ function App() {
                   boxShadow: "none",
                 }}
                 onClick={() => {
-                  alert("Welcome " + email + "!");
+                  alert("Welcome " + email + "!" + password);
                 }}
               >
                 Log In
@@ -221,7 +219,7 @@ function App() {
                   fontWeight: "500",
                 }}
               >
-                <img src={wlogo} width="100px" />
+                <img src={wlogo} alt="logo" width="100px" />
               </Typography>
             </Grid>
             <Grid item xs={12}>
